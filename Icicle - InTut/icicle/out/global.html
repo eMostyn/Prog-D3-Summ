@@ -1,0 +1,2506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Global</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Global</h1>
+
+
+
+
+
+
+<section>
+
+<header>
+
+        <h2></h2>
+
+
+</header>
+
+<article>
+    <div class="container-overview">
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h3 class="subsection-title">Methods</h3>
+
+
+
+
+
+
+
+    <h4 class="name" id="createGraph"><span class="type-signature"></span>createGraph<span class="signature">()</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Calls the define function and passes in the relevant parameters
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+
+
+<table class="params">
+    <thead>
+    <tr>
+
+        <th>Name</th>
+
+
+        <th>Type</th>
+
+
+
+
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+
+                <td class="name"><code>this.runtime</code></td>
+
+
+            <td class="type">
+
+            </td>
+
+
+
+
+
+            <td class="description last">Needed by the observable module, imported from "runtime.js"</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>this.observer</code></td>
+
+
+            <td class="type">
+
+            </td>
+
+
+
+
+
+            <td class="description last">Needed by the observable module, defines where graph will be created</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>this.getData()</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">string</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Data for the graph to represent</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>this.getOpacity()</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">float</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Opacity of the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>this.getHeight()</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">float</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Height of the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>this.getWidth()</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">float</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Width of the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>this.getCurrentList()</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">array</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">List of colours to be used in the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>this.getFontColour()</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">string</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Font colour of the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>this.getFontSize()</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">int</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Font size of the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>this.getXTextOff()</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">int</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">X offset of the text in each cell</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>this.getYTextOff()</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">int</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Y offset of the text in each cell</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line212">line 212</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="define"><span class="type-signature"></span>define<span class="signature">(runtime, observer, data, opacity, height, width, colourList, fontColour, fontSize, xOff, yOff)</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Main function used to generate the graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+
+
+<table class="params">
+    <thead>
+    <tr>
+
+        <th>Name</th>
+
+
+        <th>Type</th>
+
+
+
+
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+
+                <td class="name"><code>runtime</code></td>
+
+
+            <td class="type">
+
+            </td>
+
+
+
+
+
+            <td class="description last">Needed by the observable module, imported from "runtime.js"</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>observer</code></td>
+
+
+            <td class="type">
+
+            </td>
+
+
+
+
+
+            <td class="description last">Needed by the observable module, defines where graph will be created</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>data</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">string</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Data for the graph to represent</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>opacity</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">float</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Opacity of the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>height</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">float</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Height of the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>width</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">float</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Width of the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>colourList</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">array</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">List of colours to be used in the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>fontColour</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">string</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Font colour of the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>fontSize</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">int</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Font size of the graph</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>xOff</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">int</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">X offset of the text in each cell</td>
+        </tr>
+
+
+
+        <tr>
+
+                <td class="name"><code>yOff</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">int</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">Y offset of the text in each cell</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line132">line 132</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="getCurrentList"><span class="type-signature"></span>getCurrentList<span class="signature">()</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Depending on the value of listSelector, returns the corresponding colour list
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line83">line 83</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="getData"><span class="type-signature"></span>getData<span class="signature">()</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Returns the filepath of the data
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line42">line 42</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="getFillOpac"><span class="type-signature"></span>getFillOpac<span class="signature">()</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Returns the opacity of the graph's text and cells
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line32">line 32</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="getfontColour"><span class="type-signature"></span>getfontColour<span class="signature">()</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Returns the value of the graph's font colour
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line105">line 105</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="getFontSize"><span class="type-signature"></span>getFontSize<span class="signature">()</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Returns the value of the graph's font size
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line115">line 115</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="getHeight"><span class="type-signature"></span>getHeight<span class="signature">()</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Returns the height of the graph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line52">line 52</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="getListSelector"><span class="type-signature"></span>getListSelector<span class="signature">()</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Returns value of listSelector, used to pick a colour list
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line72">line 72</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="getWidth"><span class="type-signature"></span>getWidth<span class="signature">()</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Returns the width of the graph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line62">line 62</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="setData"><span class="type-signature"></span>setData<span class="signature">(filepath)</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Sets the data for the graph to represent
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+
+
+<table class="params">
+    <thead>
+    <tr>
+
+        <th>Name</th>
+
+
+        <th>Type</th>
+
+
+
+
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+
+                <td class="name"><code>filepath</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">string</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">The file path of the new data set</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line38">line 38</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="setFillOpac"><span class="type-signature"></span>setFillOpac<span class="signature">(opacity)</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Sets the opacity of the graph's text and cells
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+
+
+<table class="params">
+    <thead>
+    <tr>
+
+        <th>Name</th>
+
+
+        <th>Type</th>
+
+
+
+
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+
+                <td class="name"><code>opacity</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">float</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">The new opacity value</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line28">line 28</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="setfontColour"><span class="type-signature"></span>setfontColour<span class="signature">(value)</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Sets the font colour of the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+
+
+<table class="params">
+    <thead>
+    <tr>
+
+        <th>Name</th>
+
+
+        <th>Type</th>
+
+
+
+
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+
+                <td class="name"><code>value</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">string</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">The new font colour</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line101">line 101</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="setFontSize"><span class="type-signature"></span>setFontSize<span class="signature">(value)</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Sets the font size of the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+
+
+<table class="params">
+    <thead>
+    <tr>
+
+        <th>Name</th>
+
+
+        <th>Type</th>
+
+
+
+
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+
+                <td class="name"><code>value</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">int</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">The new font size</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line111">line 111</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="setHeight"><span class="type-signature"></span>setHeight<span class="signature">(toSet)</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Sets the height of the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+
+
+<table class="params">
+    <thead>
+    <tr>
+
+        <th>Name</th>
+
+
+        <th>Type</th>
+
+
+
+
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+
+                <td class="name"><code>toSet</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">float</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">The new height</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line48">line 48</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="setListSelector"><span class="type-signature"></span>setListSelector<span class="signature">(value)</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Sets the value of the variable used to select a colour list
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+
+
+<table class="params">
+    <thead>
+    <tr>
+
+        <th>Name</th>
+
+
+        <th>Type</th>
+
+
+
+
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+
+                <td class="name"><code>value</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">string</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">The new value of the variable</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line68">line 68</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4 class="name" id="setWidth"><span class="type-signature"></span>setWidth<span class="signature">(toSet)</span><span class="type-signature"></span></h4>
+
+
+
+
+
+
+<div class="description">
+    Sets the width of the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+
+
+<table class="params">
+    <thead>
+    <tr>
+
+        <th>Name</th>
+
+
+        <th>Type</th>
+
+
+
+
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+
+        <tr>
+
+                <td class="name"><code>toSet</code></td>
+
+
+            <td class="type">
+
+
+<span class="param-type">float</span>
+
+
+
+            </td>
+
+
+
+
+
+            <td class="description last">The new width</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="graphScript.js.html">graphScript.js</a>, <a href="graphScript.js.html#line58">line 58</a>
+    </li></ul></dd>
+
+
+
+
+
+
+
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module.exports.html">Diagram</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createGraph">createGraph</a></li><li><a href="global.html#define">define</a></li><li><a href="global.html#getCurrentList">getCurrentList</a></li><li><a href="global.html#getData">getData</a></li><li><a href="global.html#getFillOpac">getFillOpac</a></li><li><a href="global.html#getfontColour">getfontColour</a></li><li><a href="global.html#getFontSize">getFontSize</a></li><li><a href="global.html#getHeight">getHeight</a></li><li><a href="global.html#getListSelector">getListSelector</a></li><li><a href="global.html#getWidth">getWidth</a></li><li><a href="global.html#setData">setData</a></li><li><a href="global.html#setFillOpac">setFillOpac</a></li><li><a href="global.html#setfontColour">setfontColour</a></li><li><a href="global.html#setFontSize">setFontSize</a></li><li><a href="global.html#setHeight">setHeight</a></li><li><a href="global.html#setListSelector">setListSelector</a></li><li><a href="global.html#setWidth">setWidth</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Tue Jan 07 2020 15:12:01 GMT+0000 (Greenwich Mean Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

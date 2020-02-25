@@ -1,0 +1,83 @@
+﻿{
+  "name": "Onboard",
+  "children": [
+    {
+      "name": "Survived",
+      "children": [
+        {
+          "name": "Female",
+          "children": [
+            {
+              "name": "1st Class",
+              "value": 91
+            },
+            {
+              "name": "2nd Class",
+              "value": 70
+            },
+            {
+              "name": "3rd Class",
+              "value": 72
+            }
+          ]
+        },
+        {
+          "name": "Male",
+          "children": [
+            {
+              "name": "1st Class",
+              "value": 45
+            },
+            {
+              "name": "2nd Class",
+              "value": 17
+            },
+            {
+              "name": "3rd Class",
+              "value": 47
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Died",
+      "children": [
+        {
+          "name": "Female",
+          "children": [
+            {
+              "name": "1st Class",
+              "value": 3
+            },
+            {
+              "name": "2nd Class",
+              "value": 6
+            },
+            {
+              "name": "3rd Class",
+              "value": 72
+            }
+          ]
+        },
+        {
+          "name": "Male",
+          "children": [
+            {
+              "name": "1st Class",
+              "value": 77
+            },
+            {
+              "name": "2nd Class",
+              "value": 91
+            },
+            {
+              "name": "3rd Class",
+              "value": 300
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

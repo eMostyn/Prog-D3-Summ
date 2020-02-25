@@ -1,0 +1,14 @@
+{
+  "name": "@d3/icicle",
+  "main": "b08c339a90d5846f@201.js",
+  "version": "201.0.0",
+  "homepage": "https://observablehq.com/@d3/icicle",
+  "author": {
+    "name": "D3",
+    "url": "https://observablehq.com/@d3"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

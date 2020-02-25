@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Icicle</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<body>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <h1 id = "Title"> Titanic Passengers </h1>
+  <div id = "dataEntry">
+    Enter suitable json by url/filepath or select a pre-specified file
+    <br/>
+    <input id = "filepath" placeholder="Enter filepath here">
+    <br/>
+    <select id = "dataSelection">
+      <option value = ""> None </option>
+      <option value = "data.json">Titanic Passengers </option>
+      <option value = "https://raw.githubusercontent.com/d3/d3-hierarchy/v1.1.8/test/data/flare.json">Default Observable Data </option>
+    </select>
+  </div>
+    </fieldset>
+  Height: <input id= "heightBox" placeholder="Enter height here">
+  <br/>
+  Width: <input id= "widthBox" placeholder="Enter width here">
+  <br/>
+  <span id = "errorBox"></span>
+  <br/>
+  <br/>
+  <div id = "Opacity">
+  Opacity:
+  <input type="range" min="0" max="1" value="0.5" step = "0.1" class="slider" id="opacSlider">
+  <span id = "sliderVal"> 0.5 </span>
+  <br/>
+  <br/>
+  </div>
+  <div id = "fontDiv">
+  Font Colour:
+  <input id = "fontColourBox" placeholder = "Insert font colour here">
+  <br/>
+  Font Size:
+  <input type = "range" min = "0" max = "20" value = "10" step = "1" class = "slider" id = "fontSizeSlider">
+  <span id = "fontSizeVal"> 10 </span>
+  <br/>
+  <br/>
+</div>
+  Select Graph Colour:
+  <select id = "colourSelection">
+    <option value = "Blue">Blue </option>
+    <option value = "Red">Red </option>
+    <option value = "Purple">Purple </option>
+  </select>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <div id = "buttons">
+  <button  id = "updateButton"> Update graph </button>
+  <button id = "resetButton"> Reset graph </button>
+</div>
+  <br/>
+
+
+  <script  type="module">
+  import Diagram from "./graphScript.js"
+  import {Runtime, Library, Inspector} from "./runtime.js";
+  const runtime = new Runtime();
+
+  var heightBox = document.getElementById("heightBox");
+  var widthBox = document.getElementById("widthBox");
+  var updateButton = document.getElementById("updateButton");
+  var resetButton = document.getElementById("resetButton");
+  var errorBox = document.getElementById("errorBox");
+  var colourSelect = document.getElementById("colourSelection");
+  var dataSelect = document.getElementById("dataSelection");
+  var filePathBox = document.getElementById("filepath");
+  var title = document.getElementById("Title");
+  var fontColourBox = document.getElementById("fontColourBox");
+  var fontSizeSlider = document.getElementById("fontSizeSlider");
+  errorBox.style.color = "Red";
+
+  updateButton.addEventListener("click",updateGraph);
+  resetButton.addEventListener("click",resetGraph);
+
+  fontSizeSlider.oninput = function(){
+    var fontSizeBox = document.getElementById("fontSizeVal");
+    fontSizeBox.innerHTML = fontSizeSlider.value;
+  }
+  var gDiv = document.getElementById("GraphDiv")
+  //Define a new graph using the diagram class
+  var graph = new Diagram(runtime,Inspector.into(gDiv),"data.json")
+  //Create the first graph using the default values
+  graph.createGraph();
+
+  var slider = document.getElementById("opacSlider")
+  slider.oninput = function(){ //Every time the slider is moved
+    var sliderBox = document.getElementById("sliderVal");
+    //Set the value of the text next to the slider to the appropriate value
+    sliderBox.innerHTML = slider.value;
+  }
+
+  function updateGraph(){
+    //Check if either the height or width inputted is not a number or blank
+    if ((isNaN(heightBox.value) == true) | ((isNaN(widthBox.value) == true))) {
+        errorBox.innerHTML = "Please enter a valid value/values."
+    }
+    //Check if the width entered is lower than 300 where it would break the graph
+    else if(parseInt(widthBox.value) < 300) {
+        errorBox.innerHTML = "Please enter a width larger than 300."
+    }
+    if((heightBox.value != "") & (widthBox.value != "")){
+      //As there now valid values in the box, update the values
+      graph.setHeight(heightBox.value);
+      graph.setWidth(widthBox.value);
+      //Reset the error box message
+      errorBox.innerHTML = ""
+    }
+
+
+    if(dataSelect.value != ""){
+      graph.setData(dataSelect.value);
+      title.innerHTML = dataSelect.options[dataSelect.selectedIndex].text;
+    }
+    if((filePathBox.value != "")&&(filePathBox.value.includes(".json"))){
+      graph.setData(filePathBox.value);
+      title.innerHTML = "Icicle Graph"
+    }
+    if(fontColourBox.value != ""){
+          graph.setfontColour(fontColourBox.value);
+    }
+    graph.setFillOpac(slider.value);
+    graph.setListSelector(colourSelect.value);
+    graph.setFontSize(fontSizeSlider.value);
+
+    printGraph()
+  }
+  function resetGraph(){
+    graph.setHeight(2400)
+    graph.setWidth(975)
+    graph.setFillOpac(0.8);
+    graph.setListSelector("Blue");
+    graph.setfontColour("White")
+    graph.setFontSize(10);
+    printGraph();
+  }
+  function printGraph(){
+    gDiv.innerHTML = ""
+    graph.createGraph();
+  }
+</script>
+<div id = "GraphDiv">
+</div>
+<style>
+  .observablehq--collapsed.observablehq--inspect{
+    display: none;
+  }
+  .observablehq--function.observablehq--inspect{
+    display: none;
+  }
+  .observablehq--inspect{
+    display: none;
+  }
+</style>
+</body>
